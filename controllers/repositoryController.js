@@ -41,7 +41,7 @@ class repositoryController {
             const user = await Users.findById(user_id);
 
             if (!user) {
-                return res.status(404).json({ message: "Error ao criar" });
+                return res.status(404).json({ message: "User doesn't exist" });
             }
 
             const repository = await Repository.findOne({ userId: user_id, url })

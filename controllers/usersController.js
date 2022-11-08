@@ -87,5 +87,3 @@ class usersController {
 
 
 export default new usersController();
-
-/* parou no 1:14:00 */
